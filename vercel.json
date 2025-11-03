@@ -22,10 +22,6 @@
       "handle": "filesystem"
     },
     {
-      "src": "/static/(.*)",
-      "dest": "/frontend/build/static/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "/frontend/build/$1"
     }
