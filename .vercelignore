@@ -1,0 +1,68 @@
+# Exclude large files and unnecessary assets from serverless function bundle
+
+# PDF files (not needed if vectorstore already exists)
+*.pdf
+constitution.pdf
+
+# Development and documentation files
+*.md
+!README.md
+DEPLOY*.md
+QUICK_*.md
+FASTAPI_*.md
+PROJECT_*.md
+VERCEL_*.md
+BUILD_*.md
+CLEANUP_*.md
+FINAL_*.md
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.pkl
+!vectorstore/**/*.pkl
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Shell scripts (not needed in serverless)
+*.sh
+*.bat
+deploy.sh
+run_*.sh
+run_*.bat
+start_*.py
+
+# Large Python application files (only needed locally)
+Legal_RAG_application.py
+
+# Frontend node_modules (handled separately)
+frontend/node_modules/
+
+# Frontend build (will be built separately)
+frontend/build/
+frontend/dist/
+
+# Git files
+.git/
+.gitignore
+
